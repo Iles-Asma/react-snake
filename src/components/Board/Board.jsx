@@ -320,7 +320,6 @@ const Board = () => {
         <div>
           <div className={s.score}>Score: {score}</div>
           <div className={s.death}>Death: {death}</div>
-
         </div>
 
         <div id="board" className={s.board}>
