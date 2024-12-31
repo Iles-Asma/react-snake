@@ -177,6 +177,7 @@ const Board = () => {
   };
 
   const onKeyDown = (e) => {
+    // pause 
     if (e.key === "p" || e.key === "P") {
       togglePause();
       return;
@@ -281,6 +282,7 @@ const Board = () => {
     foodTimer.current = 0;
   };
 
+  // pause du jeu 
   const togglePause = () => {
     setPaused((prevPaused) => {
       if (!prevPaused) {
@@ -315,6 +317,7 @@ const Board = () => {
       {gameOver && <Scoreboard />}
 
       <div className={s.parent}>
+        {/* pause du jeu  */}
         {paused && <div className={s.paused}>PAUSE. 'P' pour reprendre.</div>}
 
         <div>
